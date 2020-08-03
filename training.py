@@ -47,6 +47,36 @@ df_A.head()
 # Dica de ouro! Você vai usar uma função desse tipo: 
 #df_final  = pd.concat([df1, df2, df2]).drop_duplicates(keep=False)  #descubra o que isso faz... vai te ajudar muito!
 
+#TRANSLATION#
+
+############################## Tasks ################### #################
+
+# 1 - see the size (number of rows) of the dataframes
+# 2 - Delete duplicates for each dataframe (be careful not to completely delete duplicate email)
+# 3 - 'join' the df B and C
+# 4 - find emails from (B + C) that are present in A
+# 5 - Delete A, B, C from D
+# 6 - print in a csv all emails from B that are @hotmail (do not print the indexes)
+# 7 - print to an xlsx all emails from B that are NOT @hotmail (do not print the indexes)
+# 8 - Put C emails in alphabetical order.
+# 9 - With list C in alphabetical order, make a random mix of it
+# 10 - From the resulting list of 9, take a sample of 200 emails.
+# 11 - randomly mix the D list and create divide it into 10 lists of approximately equal size (print the first 2)
+# 12 - read the 7 file
+# 13 - Get the list of A1 (equal to A) from D (hint: You can use list A for this task)
+# 14 - CHALLENGE !!!! Find out which cities are on list A, B and C using the file: historico_vagas.csv
+
+########## Tips and requirements ########################
+
+# Requirement - You cannot use an 'if' or 'for' loop for any of these tasks! (You do not need)
+
+# Tips
+# you will use some functions like: shuffle, split, sample, merge, concat, sort_values, drop_duplicates etc.
+# Golden tip! You will use such a function:
+#df_final = pd.concat ([df1, df2, df2]). drop_duplicates (keep = False) #discover what it does ... it will help you a lot!
+
+# 1 - see the size (number of rows) of the dataframes
+
 # 1 - ver o tamanho(número de linhas) dos dataframes
 
 print("Número de linhas de A:", len(df_A))
