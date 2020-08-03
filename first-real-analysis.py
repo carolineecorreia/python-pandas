@@ -26,6 +26,25 @@ Original file is located at
 #RETORNANTES é diferente de RECORRENTE (retornante o cara não estava assinando mês passado e assinou neste mês),
 #recorrente o cara era assinante o mês passado e renovou este mês.
 
+#TRANSLATION
+
+############################## Tasks ################### #################
+
+################ Analysis 1 #######################
+# a) How many NEW paying contractors and RETURNING contractors do we have per month (since always until Jun2020)
+# b) NEW - You paid for the plan for the first time in your life!
+# c) RETURNORS - you have been a subscriber, have you ever been in the past, canceled, spent some time without paying (at least 1 month), and now you have returned.
+# d) plot a (month) X chart (new, returning)
+
+################ Analysis 2 #######################
+# What is the amount billed by NEW contractors and RETURNING contractors per month (since always until Jun2020)
+# plot a (month) X chart (new, returning)
+
+#OBS
+#You can use whatever you want!
+#RETORNANTES is different from RECURRENT (returning the guy was not signing last month and signed this month),
+#recurrent the guy was a subscriber last month and renewed this month.
+
 import pandas as pd
 import datetime
 import numpy as np
@@ -197,10 +216,6 @@ while (j < 5):
 #            print(email)
 
 print(lista_emails[4])
-
-
-   
-
 
 #contratantes_novos = contratantes.drop_duplicates(subset='Email', keep='first',) #só os emails que aparecem apenas 1 vez
 #contratantes_novos.sort_values(by=['Year'])
